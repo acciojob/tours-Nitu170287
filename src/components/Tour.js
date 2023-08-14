@@ -12,7 +12,7 @@ const [showMore, setShowMore] = useState(false)
                     <div>
                         <p className="title">{tour.name}</p>
                         <p className="tour-info">{showMore ? tour.info : tour.info.slice(0,194)+"..."}</p>
-                        <button onClick={()=>setShowMore(prevItem => !prevItem)} id="see-more-rec6d6T3q5EBIdCfD">{showMore ? "see less" : "See more"}</button>
+                        <button onClick={()=>setShowMore(prevItem => !prevItem)} id="see-more-rec6d6T3q5EBIdCfD">{showMore ? "Show less" : "See more"}</button>
                         <p className="tour-price">{tour.price}</p>
                     </div>
                     <button className="delete-btn" id="delete-btn-rec6d6T3q5EBIdCfD" onClick={()=>deleteTourBtn(tour.id)}>Delete Tour</button>
