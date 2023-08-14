@@ -11,7 +11,7 @@ const [showMore, setShowMore] = useState(false)
                     <img src={tour.image} alt="" />
                     <div>
                         <p className="title">{tour.name}</p>
-                        <p className="tour-info">{showMore ? tour.info : tour.info.slice(0,200)+"..."}</p>
+                        <p className="tour-info">{showMore ? tour.info : tour.info.slice(0,201)+"..."}</p>
                         <button onClick={()=>setShowMore(prevItem => !prevItem)}>{showMore ? "see less" : "show more"}</button>
                         <p className="tour-price">{tour.price}</p>
                     </div>
